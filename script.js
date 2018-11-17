@@ -13,11 +13,13 @@ $(document).ready(function(){
     console.log("call-api button was pressed");
 
     // call the API
-    var url = ""; // add your API's URL here!
+    var url =https://github.com/njt618/chick_tech_api_workshop/blob/master/script.js; //
     $.get(url, function(data, status){
         console.log("Data: " + data + "\nStatus: " + status);
         console.log(data);
-        // do something cool with the data here!!!
+        $("img").attr("src",data.url);
+      $("p").html(data.explanation);
+      @("#explanation").html(data.explanation);
     });
 
   });
